@@ -1,23 +1,19 @@
 package ar.edu.unahur.obj2.uml;
 
-import java.util.ArrayList;
-import java.util.List;
-import ar.edu.unahur.obj2.uml.vehiculos.*;
-
 public class Usuario {
     private String nombre;
-    private List<Vehiculo> vehiculos = new ArrayList<>();
-    
+    private Double dinero;
 
-    public Usuario (String nombre){
+    public Usuario (String nombre, Double dinero){
         this.nombre = nombre;
+        this.dinero = dinero;
     }
 
     public String getNombre(){
         return nombre;
     }
 
-    public List<Vehiculo> vehiculosDisp(){
-        return vehiculos;
+    public Double getDinero(){
+        return dinero;
     }
 }

@@ -3,8 +3,8 @@ package ar.edu.unahur.obj2.uml.vehiculos;
 public class Bicicleta extends Vehiculo{
     private Integer rodado;
 
-    public Bicicleta(Integer disponibilidad, Integer rodado){
-        super(disponibilidad);
+    public Bicicleta(boolean estaDisponible, Integer rodado){
+        super(estaDisponible);
         this.rodado = rodado;
     }
 

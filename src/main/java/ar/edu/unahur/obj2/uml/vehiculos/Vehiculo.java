@@ -1,15 +1,17 @@
 package ar.edu.unahur.obj2.uml.vehiculos;
 
 public class Vehiculo {
-    protected Integer disponibilidad;
+    protected boolean estaDisponible;
 
-    public Vehiculo(Integer disponibilidad){
-        this.disponibilidad = disponibilidad;
+    public Vehiculo(boolean estaDisponible){
+        this.estaDisponible = estaDisponible;
+    }
+    
+    public boolean getDisponibilidad(){
+        return estaDisponible;
     }
 
-    public Integer getDisponibilidad(){
-        return disponibilidad;
+    public void setDisponibilidad(boolean disponibilidad){
+        this.estaDisponible = disponibilidad;
     }
-
-
 }
